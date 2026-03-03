@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BISANZ-BETREUUNG | Betreuung & Haushaltshilfe in München</title>
+  <meta name="description" content="BISANZ-BETREUUNG – zuverlässige Betreuung und Haushaltshilfe in München und Umgebung. Anfrage per Telefon, WhatsApp oder E-Mail." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#111a2f; --text:#eaf0ff; --muted:#b9c6ea;
+      --accent:#6ea8ff; --accent2:#8bffda; --border:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(110,168,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 80% 30%, rgba(139,255,218,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:1050px; margin:0 auto; padding:24px}
+    .nav{
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      padding:14px 18px; border:1px solid var(--border); border-radius:18px;
+      backdrop-filter: blur(10px); background: rgba(17,26,47,.65);
+      position:sticky; top:14px; z-index:5;
+    }
+    .brand{display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px}
+    .logo{
+      width:38px; height:38px; border-radius:14px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 10px 30px rgba(110,168,255,.25);
+    }
+    .menu{display:flex; gap:12px; flex-wrap:wrap}
+    .menu a{
+      text-decoration:none; padding:10px 12px; border-radius:14px;
+      border:1px solid transparent; color:var(--muted); font-weight:600;
+    }
+    .menu a:hover{border-color:var(--border); color:var(--text)}
+    .hero{
+      margin-top:26px; display:grid; grid-template-columns: 1.15fr .85fr; gap:18px;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+    .card{
+      border:1px solid var(--border); border-radius:22px;
+      background: rgba(17,26,47,.7); backdrop-filter: blur(10px);
+      padding:22px;
+    }
+    h1{margin:0 0 10px; font-size:40px; line-height:1.1}
+    @media (max-width:520px){ h1{font-size:32px} }
+    .sub{color:var(--muted); font-size:16px; line-height:1.6}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .pill{
+      padding:10px 12px; border-radius:999px; border:1px solid var(--border);
+      color:var(--muted); font-weight:700; font-size:13px;
+      background: rgba(255,255,255,.03);
+    }
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+    .btn{
+      border:1px solid var(--border); border-radius:16px; padding:12px 14px;
+      text-decoration:none; font-weight:800; display:inline-flex; gap:10px; align-items:center;
+      background: rgba(255,255,255,.04);
+      cursor:pointer;
+    }
+    .btn.primary{
+      border-color: rgba(110,168,255,.45);
+      background: linear-gradient(135deg, rgba(110,168,255,.22), rgba(139,255,218,.14));
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+    @media (max-width:900px){ .grid3{grid-template-columns:1fr} }
+    h2{margin:0 0 10px; font-size:22px}
+    .item{color:var(--muted); line-height:1.55}
+    .badge{display:inline-block; margin-top:10px; padding:8px 10px; border-radius:12px;
+      border:1px solid var(--border); color:var(--muted); font-weight:700; font-size:13px;
+    }
+    .section{margin-top:18px}
+    .form{display:grid; gap:12px}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:700px){ .row{grid-template-columns:1fr} }
+    input, textarea{
+      width:100%; padding:12px 12px; border-radius:14px;
+      border:1px solid var(--border); background: rgba(255,255,255,.03);
+      color:var(--text); outline:none;
+    }
+    textarea{min-height:120px; resize:vertical}
+    .small{color:var(--muted); font-size:13px; line-height:1.5}
+    footer{margin:18px 0 8px; color:var(--muted); font-size:13px}
+    .sep{height:1px; background: var(--border); margin:16px 0}
+    .notice{padding:12px 14px; border-radius:16px; border:1px solid var(--border); background: rgba(255,255,255,.03); color:var(--muted)}
+    .linkish{color:var(--text); text-decoration:underline; text-underline-offset:3px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          BISANZ-BETREUUNG<br>
+          <span style="font-weight:650; color:var(--muted); font-size:13px;">Betreuung • Haushalt • Unterstützung</span>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="card">
+        <h1>Zuverlässige Betreuung<br>und Alltagshilfe</h1>
+        <div class="sub">
+          <b>BISANZ-BETREUUNG</b> unterstützt zuverlässig im Alltag: Betreuung, Begleitung und Haushaltshilfe
+          in <b>München</b> und Umgebung. Schnell anfragen – ich melde mich zeitnah.
+        </div>
+
+        <div class="pillrow" aria-label="Highlights">
+          <div class="pill">✔ Flexibel nach Bedarf</div>
+          <div class="pill">✔ Pünktlich & zuverlässig</div>
+          <div class="pill">✔ Deutsch / Ukrainisch / Russisch</div>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="tel:+4917671398143">📞 Anrufen</a>
+          <a class="btn" href="https://wa.me/4917671398143" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <a class="btn" id="emailBtn" href="#">✉️ E-Mail</a>
+          <a class="btn" id="quoteBtn" href="#">🧾 Angebot / Preise auf Anfrage</a>
+        </div>
+
+        <div class="sep"></div>
+        <div class="small">
+          Hinweis: Leistungen werden individuell abgestimmt. Kein medizinischer Pflegedienst (keine Behandlungspflege).
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Schnellanfrage</h2>
+        <div class="small">Fülle kurz aus – die Nachricht wird in deinem E-Mail-Programm vorbereitet.</div>
+        <div style="height:10px"></div>
+
+        <form class="form" id="contactForm">
+          <div class="row">
+            <input required name="name" placeholder="Name" />
+            <input name="phone" placeholder="Telefon (optional)" />
+          </div>
+          <div class="row">
+            <input required name="email" type="email" placeholder="E-Mail" />
+            <input name="city" placeholder="Ort (z. B. München)" />
+          </div>
+          <textarea required name="message" placeholder="Wobei brauchst du Hilfe? (Betreuung, Haushalt, Begleitung, Zeiten …)"></textarea>
+          <button class="btn primary" type="submit">📨 Anfrage senden</button>
+          <div class="small">
+            Durch Klick wird eine E-Mail vorbereitet. Alternativ: <a class="linkish" href="tel:+4917671398143">anrufen</a> oder
+            <a class="linkish" href="https://wa.me/4917671398143" target="_blank" rel="noopener">WhatsApp</a>.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="section card" id="leistungen">
+      <h2>Leistungen</h2>
+      <div class="grid3">
+        <div class="card" style="padding:18px">
+          <h2 style="font-size:18px;margin:0 0 8px">Betreuung & Begleitung</h2>
+          <div class="item">Begleitung bei Terminen, Spaziergänge, Gesellschaft und Unterstützung im Alltag.</div>
+          <div class="badge">Individuell planbar</div>
+        </div>
+        <div class="card" style="padding:18px">
+          <h2 style="font-size:18px;margin:0 0 8px">Haushaltshilfe</h2>
+          <div class="item">Leichte Haushaltstätigkeiten: Ordnung, Küche, Einkäufe und alltägliche Hilfe.</div>
+          <div class="badge">Sauber & strukturiert</div>
+        </div>
+        <div class="card" style="padding:18px">
+          <h2 style="font-size:18px;margin:0 0 8px">Organisation</h2>
+          <div class="item">Unterstützung bei Organisation von Alltag, Dokumenten und Terminplanung.</div>
+          <div class="badge">Schnell & zuverlässig</div>
+        </div>
+      </div>
+
+      <div style="height:14px"></div>
+      <div class="notice">
+        Gewerbe (GewA): Tätigkeit als im/bei Hauswirtschafter(in) • Start: 01.11.2025 •
+        Standort: München (Hauptniederlassung) • Nebenberuflich.
+      </div>
+    </div>
+
+    <div class="section card" id="ablauf">
+      <h2>Ablauf</h2>
+      <div class="item">
+        <b>1) Anfrage</b> – kurz per Telefon / WhatsApp / Formular.<br>
+        <b>2) Klärung</b> – Bedarf, Zeiten, Ort, Umfang.<br>
+        <b>3) Start</b> – pünktlich und zuverlässig.<br>
+        <b>4) Anpassung</b> – flexibel nach Situation.
+      </div>
+    </div>
+
+    <div class="section card" id="kontakt">
+      <h2>Kontakt</h2>
+      <div class="item">
+        <b>BISANZ-BETREUUNG</b><br>
+        Inhaber: <b>Oleksandr Slavych</b><br>
+        Am Hochacker 44<br>
+        81827 München, Deutschland<br><br>
+
+        📞 Telefon: <a href="tel:+4917671398143">+49 176 71398143</a><br>
+        💬 WhatsApp: <a href="https://wa.me/4917671398143" target="_blank" rel="noopener">Chat öffnen</a><br>
+        ✉️ E-Mail: <a id="emailLink" href="#">Kontakt per E-Mail</a>
+      </div>
+      <div class="sep"></div>
+      <div class="small">
+        Geschäftszeiten: nach Vereinbarung. Einsatzgebiet: München & Umgebung.
+      </div>
+    </div>
+
+    <div class="section card" id="impressum">
+      <h2>Impressum</h2>
+      <div class="small">
+        <b>Angaben gemäß § 5 TMG</b><br><br>
+
+        <b>BISANZ-BETREUUNG</b><br>
+        Inhaber: Oleksandr Slavych<br>
+        Am Hochacker 44<br>
+        81827 München<br>
+        Deutschland<br><br>
+
+        <b>Kontakt</b><br>
+        Telefon: +49 176 71398143<br>
+        E-Mail: <span id="emailText"></span><br><br>
+
+        <b>Steuernummer</b> (Finanzamt München): 146/198/31854<br><br>
+
+        <b>Hinweis</b><br>
+        Kein medizinischer Pflegedienst (keine Behandlungspflege). Leistungen werden individuell vereinbart.
+      </div>
+    </div>
+
+    <div class="section card" id="datenschutz">
+      <h2>Datenschutz (kurz)</h2>
+      <div class="small">
+        <b>Verantwortlicher</b><br>
+        Oleksandr Slavych, BISANZ-BETREUUNG, Am Hochacker 44, 81827 München<br>
+        E-Mail: <span id="emailText2"></span><br><br>
+
+        <b>Welche Daten werden verarbeitet?</b><br>
+        Wenn du mich kontaktierst (Telefon, WhatsApp oder E-Mail/ Formular), werden die von dir übermittelten Daten
+        (z. B. Name, Kontaktdaten, Nachricht) zur Bearbeitung deiner Anfrage verarbeitet.<br><br>
+
+        <b>Zweck & Rechtsgrundlage</b><br>
+        Bearbeitung von Anfragen und Kommunikation (Art. 6 Abs. 1 lit. b DSGVO – vorvertragliche Maßnahmen,
+        sowie Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse an effizienter Kommunikation).<br><br>
+
+        <b>Speicherdauer</b><br>
+        Daten werden nur so lange gespeichert, wie es für die Bearbeitung erforderlich ist bzw. gesetzliche Pflichten bestehen.<br><br>
+
+        <b>Deine Rechte</b><br>
+        Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch
+        und Datenübertragbarkeit nach Maßgabe der DSGVO.<br><br>
+
+        <b>Hinweis zum Formular</b><br>
+        Das Kontaktformular erstellt eine E-Mail (mailto) in deinem E-Mail-Programm. Es werden dadurch keine Daten
+        automatisch auf einem Server gespeichert.
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> BISANZ-BETREUUNG • München
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ---- Email obfuscation (anti-spam) ----
+    // Email parts (not readable as plain text in HTML)
+    const eUser = "sascha.slawytsch";
+    const eDomain = "gmail.com";
+    const email = `${eUser}@${eDomain}`;
+
+    function mailtoLink(subject, body){
+      const s = encodeURIComponent(subject || "");
+      const b = encodeURIComponent(body || "");
+      return `mailto:${email}?subject=${s}&body=${b}`;
+    }
+
+    // Set email in visible places (rendered by JS)
+    const emailText = document.getElementById("emailText");
+    const emailText2 = document.getElementById("emailText2");
+    if (emailText) emailText.textContent = email;
+    if (emailText2) emailText2.textContent = email;
+
+    const emailLink = document.getElementById("emailLink");
+    if (emailLink){
+      emailLink.href = mailtoLink("Anfrage – BISANZ-BETREUUNG", "");
+    }
+
+    const emailBtn = document.getElementById("emailBtn");
+    if (emailBtn){
+      emailBtn.href = mailtoLink("Anfrage – BISANZ-BETREUUNG", "");
+    }
+
+    const quoteBtn = document.getElementById("quoteBtn");
+    if (quoteBtn){
+      quoteBtn.href = mailtoLink(
+        "Angebot / Preise anfragen – BISANZ-BETREUUNG",
+        "Hallo,\n\nich möchte ein Angebot / Preise anfragen.\n\nOrt:\nZeitraum:\nWunsch-Leistung:\nKurze Beschreibung:\n\nVielen Dank!\n"
+      );
+    }
+
+    // ---- Form -> mailto ----
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const name = data.get("name") || "";
+      const fromEmail = data.get("email") || "";
+      const phone = data.get("phone") || "";
+      const city = data.get("city") || "";
+      const message = data.get("message") || "";
+
+      const subject = "Anfrage – BISANZ-BETREUUNG";
+      const body =
+        `Name: ${name}\nE-Mail: ${fromEmail}\nTelefon: ${phone}\nOrt: ${city}\n\nNachricht:\n${message}\n`;
+
+      window.location.href = mailtoLink(subject, body);
+    });
+  </script>
+</body>
+</html> 
